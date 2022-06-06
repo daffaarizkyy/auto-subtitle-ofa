@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wibu x Nolep Studios</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/logo.png" rel="icon">
+  <link href="static/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css?v=3.4.1" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css?v=3.4.1" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css?v=3.4.1" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css?v=3.4.1" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css?v=3.4.1" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css?v=3.4.1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css?v=3.4.1">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css?v=3.4.1" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Knight - v4.7.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="/"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/upload">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="upload" class="upload">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          {% if filename is not defined %}
+            <h2>Create SRT File</h2>
+            <p>Upload your Video Here (MP4/MKV)</p>
+            <p>Supported Languages : <b>EN -> IND</b></p>
+          {% endif %}
+          {% if filename is defined %}
+            <h2>Process Completed !</h2>
+            <p>Your SRT is Ready to Download</p>
+          {% endif %}
+        </div>
+        {% if message is defined %}
+          <div class="alert alert-danger" role="alert">
+            {{message}}
+          </div>
+        {% endif %}
+        <div class="row justify-content-center" data-aos="fade-up">
+            {% if filename is not defined %}
+            <form method="POST" action="/upload" autocomplete="off" enctype="multipart/form-data">
+                <div class="form-control">
+                    <input type="file" name="file" id="file" required>
+                </div>
+            {% endif %}
+                <div style="text-align: center">
+                    <br>
+                    {% if filename is not defined %}
+                      <button type="submit" id="btnFetch" class="btn btn-primary mx-3">Process</button>
+                    {% endif %}
+                    {% if filename is defined %}
+                      <a href="/upload" class="btn btn-primary">Create Another SRT</a>
+                      <a href="/download/{{filename}}" class="btn btn-primary mx-3">Download</a>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </section> <!-- ======= End Section ======= -->
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a href="#header" class="scrollto footer-logo"><img src="static/img/hero-logo.png" alt=""></a>
+            <h3>Wibu x Nolep</h3>
+            <p>Create Auto-Subtitle SRT File from Video</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Wibu x Nolep</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Cloud</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js?v=3.4.1"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js?v=3.4.1"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js?v=3.4.1"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js?v=3.4.1"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js?v=3.4.1"></script>
+  <script src="static/vendor/php-email-form/validate.js?v=3.4.1"></script>
+  <!-- New  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js?v=3.4.1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js?v=3.4.1"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js?v=3.4.1"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js?v=3.4.1"></script>
+  <!-- New  -->
+  <script>
+    function disableBtn() {
+    document.getElementById("btnFetch").disabled = true;
+    }
+    
+    document.getElementById("btnFetch").onclick = function(e) {
+    if (document.getElementById("file").value == "") {
+      e.preventDefault();
+      alert("Please select a file.");
+    }
+    else {
+      //$(this).prop("disabled", true);
+      // add spinner to button
+      $(this).html(
+        `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...`
+      );
+      setTimeout(disableBtn, 1);
+    }
+  }
+  </script>
+  <script>
+    if ( window.history.replaceState ) {
+      window.history.replaceState( null, null, window.location.href);
+    }
+  </script>
+
+</body>
+
+</html>
