@@ -25,9 +25,9 @@ def upload_files():
     uploaded_file = request.files['file']
     filename = secure_filename(uploaded_file.filename)
     if filename != '':
-        file_ext = os.path.splitext(filename)[1].lower()
+        file_ext = os.path.splitext(filename)[1]
         video = os.path.splitext(filename)[0]
-        if file_ext not in app.config['UPLOAD_EXTENSIONS']:
+        if file_ext.lower() not in app.config['UPLOAD_EXTENSIONS']:
             message = "Format File Not Allowed"
             return render_template('upload.html', message=message)
         uploaded_file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
