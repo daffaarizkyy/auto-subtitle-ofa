@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 from subtitle import subtitle
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 1000 * 1024 * 1024
 app.config['UPLOAD_EXTENSIONS'] = ['.mp4', '.mkv', '.3gp', '.avi']
 app.config['UPLOAD_PATH'] = 'uploads'
 
