@@ -19,6 +19,10 @@ def index():
 def upload_page():
     return render_template('upload.html')
 
+@app.errorhandler(413)
+def request_entity_too_large(error):
+    message = "File Exceeds Limit, Please Upload a File Less Than 1GB"
+    return render_template('upload.html', message=message,), 413
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
@@ -28,7 +32,7 @@ def upload_files():
         file_ext = os.path.splitext(filename)[1]
         video = os.path.splitext(filename)[0]
         if file_ext.lower() not in app.config['UPLOAD_EXTENSIONS']:
-            message = "Format File Not Allowed"
+            message = "Format File Not Allowed !, Please Upload (mp4, mkv, 3gp, avi) file"
             return render_template('upload.html', message=message)
         uploaded_file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
         subtitle(video, file_ext)
