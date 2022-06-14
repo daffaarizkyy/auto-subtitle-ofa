@@ -66,13 +66,17 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-- Clone this Repository
 Type on your CMD or Terminal :
 
-`git clone https://github.com/daffaarizkyy/auto-subtitle-ofa.git`
+- Clone this Repository
+
+```
+git clone https://github.com/daffaarizkyy/auto-subtitle-ofa.git
+```
 
 - cd to your directory (on where's you clone this project)
-Type on your CMD or Terminal (example) :
+For Example:
+
 `cd auto-subtitle-ofa`
 
 - Run `pip install -r requirements.txt`
