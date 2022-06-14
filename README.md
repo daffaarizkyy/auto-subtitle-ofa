@@ -74,10 +74,11 @@ Type on your CMD or Terminal :
 git clone https://github.com/daffaarizkyy/auto-subtitle-ofa.git
 ```
 
-- cd to your directory (on where's you clone this project)
+Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+
 For Example:
 
-`cd auto-subtitle-ofa`
+  `cd auto-subtitle-ofa`
 
 - Run `pip install -r requirements.txt`
 
