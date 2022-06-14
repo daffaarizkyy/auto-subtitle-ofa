@@ -37,10 +37,17 @@ We developed an application called Wibu x Nolep as a solution to automatically c
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Easy to Use
+- Able to perform voice recognition and translation automatically
+- Supported many video file formats
+
+## Lacks
+- If the background sound is too loud, for example the sound of an explosion on
+  action films will make dialogue not detected properly
+- The result of rigid and formal translation
+- The length of the process is directly proportional to the length of the video
+- Requires an internet connection to run the process
+- For now only supports English to Indonesian
 
 
 ## Screenshots
@@ -51,43 +58,65 @@ List the ready features here:
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+The `requirements.txt` file should list all Python libraries that needed for this project.
+This library will be installed using:
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+```
+pip install -r requirements.txt
+```
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+- Clone this Repository
+Type on your CMD or Terminal :
 
-`write-your-code-here`
+`git clone https://github.com/daffaarizkyy/auto-subtitle-ofa.git`
+
+- cd to your directory (on where's you clone this project)
+Type on your CMD or Terminal (example) :
+`cd auto-subtitle-ofa`
+
+- Run `pip install -r requirements.txt`
+
+- And Run `python app.py`
+
+- Open your browser and enter `localhost:5000` or `http://127.0.0.1:5000/`
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_
 
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
+- The translation needs to be improved so that it is not stiff and formal
 - Improvement to be done 2
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Added more supported languages
+- Features allow users to edit srt file after automatic translations
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was inspired by Youtube Closed Captions and Many Films with Subtitle.
+
+Many thanks to:
+- Angga Dwi Andriansyah : Deployment back-end
+  Universitas Sriwijaya, Majoring in Informatics Engineering
+
+- Irvan Kurniawan : Modelling
+  Universitas Sriwijaya, Majoring in Informatics Engineering
+
+- Muhammad Azka Hisbullah : Modelling
+  Universitas Sriwijaya, Majoring in Informatics Engineering
+
+- Muhammad Daffa Rizky Fatarah : UI/UX dan front-end
+  Universitas Sriwijaya, Majoring in Informatics Engineering
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@Wibu x Nolep](https://www.unsri.ac.id/) - feel free to contact us!
 
 
 <!-- Optional -->
