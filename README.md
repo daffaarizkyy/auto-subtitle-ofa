@@ -45,6 +45,8 @@ List the ready features here:
 
 ## Screenshots
 ![Example screenshot](./static/img/screenshots/home.png)
+![Example screenshot](./static/img/screenshots/home-1.png)
+![Example screenshot](./static/img/screenshots/srt.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
