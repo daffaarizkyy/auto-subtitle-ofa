@@ -94,13 +94,12 @@ Project is: _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
 - The translation needs to be improved so that it is not stiff and formal
 - Improvement to be done 2
 
-To do:
+To do for future development:
 - Added more supported languages
 - Features allow users to edit srt file after automatic translations
 
@@ -110,16 +109,16 @@ To do:
 
 Many thanks to:
 - Angga Dwi Andriansyah : Deployment back-end
-  Universitas Sriwijaya, Majoring in Informatics Engineering
+  Sriwijaya University, Majoring in Informatics Engineering
 
 - Irvan Kurniawan : Modelling
-  Universitas Sriwijaya, Majoring in Informatics Engineering
+  Sriwijaya University, Majoring in Informatics Engineering
 
 - Muhammad Azka Hisbullah : Modelling
-  Universitas Sriwijaya, Majoring in Informatics Engineering
+  Sriwijaya University, Majoring in Informatics Engineering
 
-- Muhammad Daffa Rizky Fatarah : UI/UX dan front-end
-  Universitas Sriwijaya, Majoring in Informatics Engineering
+- Muhammad Daffa Rizky Fatarah : UI/UX and front-end
+  Sriwijaya University, Majoring in Informatics Engineering
 
 
 ## Contact
