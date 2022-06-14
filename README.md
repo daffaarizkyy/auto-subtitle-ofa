@@ -1,5 +1,6 @@
 # Utilization of Speech Recognition to Have Indonesian Subtitles and Translations
 > Wibu x Nolep is an automatic subtitle generator application by utilizing Natural Language Processing and also a speech recognition API. This application is web-based, so users must use a web browser, install Python and flask. Then the user must also install the libraries used such as ffmpeg, pydub, webrtcvad, speechrecognition, googletrans, and srt. Users must also have a smooth internet connection while the application is processing.
+
 > Live demo [_here_](https://auto-subtitle-ofa.herokuapp.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
