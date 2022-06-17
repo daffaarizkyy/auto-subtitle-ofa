@@ -99,7 +99,7 @@ Project is: _complete_
 
 Room for improvement:
 - The translation needs to be improved so that it is not stiff and formal
-- Improvement to be done 2
+- The Speech Recognition Processing needs to be improved so that the processing is more faster
 
 To do for future development:
 - Added more supported languages
